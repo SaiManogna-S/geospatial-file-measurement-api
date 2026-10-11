@@ -204,17 +204,20 @@ npm run build
 
 ## Screenshots
 
-Capture the running UI at `http://localhost:3000` after uploading `backend/tests` generated files or any local KML/shapefile ZIP.
+### Dashboard
+![TerraMetric Dashboard](docs/screenshots/dashboard.png)
 
-Suggested frames:
+### Upload Studio
+![TerraMetric Upload Studio](docs/screenshots/upload%20studio.png)
 
-- Overview empty state
-- Overview with processed datasets
-- Upload studio
-- Map workspace fitted to real geometries
-- Measurement table and feature detail
+### Map Workspace
+![TerraMetric Map Workspace](docs/screenshots/map.png)
 
-Place images in `docs/screenshots/` if you add them to the repository.
+### Dataset Details
+![TerraMetric Dataset Details](docs/screenshots/upload%20dataset.png)
+
+### CSV Export
+![TerraMetric CSV Export](docs/screenshots/csv.png).
 
 ## Design decisions
 
@@ -241,19 +244,8 @@ Building TerraMetric is a walk through the difference between a geographic CRS a
 - Streaming processing for large archives
 - Equal-area regional templates (Albers, UTM grids) selectable by the analyst
 
-## Push to GitHub
+## Repository
 
-This workspace started without a git remote. To publish:
+**GitHub:** [TerraMetric — Geospatial Measurement Platform](https://github.com/SaiManogna-S/geospatial-file-measurement-api)
 
-```powershell
-cd C:\geospatial-file-measurement-api
-git init
-git add .
-git status
-git commit -m "Add TerraMetric geospatial measurement API and workspace UI."
-git branch -M main
-git remote add origin https://github.com/<your-account>/<your-repo>.git
-git push -u origin main
-```
-
-Replace the origin URL with the existing public repository. Do not commit `.venv`, `node_modules`, `.env`, SQLite databases, or `backend/data/`.
+Clone the repository and follow the installation instructions above to run TerraMetric locally.
